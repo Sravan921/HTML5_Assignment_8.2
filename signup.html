@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="Assignment_8.2.css">
+    <script>
+
+    function store() {
+
+     var inputName = document.getElementById("name");
+     var inputUsername = document.getElementById("username");
+     var inputPassword = document.getElementById("password");
+     localStorage.setItem("name", inputName.value);
+     localStorage.setItem("username", inputUsername.value);
+     localStorage.setItem("password", inputPassword.value);
+     
+
+     (function () {
+     window.location.href='Assignment_8.2.html';
+     })();
+
+    }
+   
+</script>
+</head>
+<body>
+    
+    <center><h1>MySelfieTech </h1>
+    <br>
+    Signup
+    <br>
+    <input type="text" placeholder="Name" id="name">
+    <br>
+    <input type="text"  placeholder=" Email"  id="username">
+    <br>
+    <input type="text"  placeholder=" Password"  id="password">
+    <br>
+    
+    <button onclick= "store()" type="button">Submit Query </button>
+    </center>
+    <br><br>
+    <button class = "second" onclick="window.location.href='Assignment_8.2.html'">Back</button>
+
+
+
+</body>
+</html>
