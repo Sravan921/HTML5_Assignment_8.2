@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Assignment_8.2.css">
+</head>
+
+<script>
+
+    function retrive() {
+
+    var inputUsername = localStorage.getItem("username");
+    var inputPassword = localStorage.getItem("password");
+
+    if (((username.value) == localStorage.getItem('username')) && ((password.value) == localStorage.getItem('password'))) {
+          
+     document.getElementById("welcomemessage").innerHTML = "Welcome " + localStorage.getItem('username') + "!";
+     
+      } 
+      else {
+          document.getElementById("incorrectmessage").innerHTML = "Incorrect Username or Password";
+      }
+
+    }
+   
+</script>
+
+
+
+<body>
+    <center><h1>MySelfieTech </h1>
+    <br>
+    Login
+    <br>
+    <input type="text"  placeholder=" Email"  id="username">
+    <br>
+    <input type="text"  placeholder=" Password"  id="password">
+    <br>
+    <p id= "welcomemessage"> </p>
+    <p id= "incorrectmessage"> </p>
+    
+    <button onclick= "retrive()" type="button">Submit Query </button>
+    
+    </center>
+    <br><br>
+    <button class = "second" onclick="window.location.href='Assignment_8.2.html'">Back</button>
+    <button onclick="window.location.href='Assignment_8.2.html'">Logout</button>
+    
+
+</body>
+</html>
